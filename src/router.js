@@ -17,7 +17,7 @@ const router = createRouter({
 		{
 			path: '/',
 			name: 'home',
-			component: Home,
+			component: RestaurantsIndex,
 		},
 		{
 			path: '/register',
@@ -50,7 +50,12 @@ const router = createRouter({
 			name: 'cart',
 			component: Cart,
 		},
-	],
+	], scrollBehavior(to, from, savedPosition) {
+		if (to.name === 'restaurants.index') {
+			return { el: '#restaurants' };
+		}
+		return { top: 0 };
+	},
 })
 
 export { router }
