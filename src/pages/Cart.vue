@@ -11,16 +11,20 @@
               <div class="card-body">
                 <div class="card-title">
                   <!-- Nome e quantità del cibo -->
-                  <h4>{{ food.name }}</h4>
-                  <h6>Quantità: {{ food.quantity }}</h6>
+                  <h4 class="mx-2">{{ food.name }}</h4>
+                  <div class="button-group d-flex justify-content-start align-items-baseline">
+                    <!-- Pulsante per diminuire la quantità del cibo nel carrello -->
+                    <button @click="removeOneFoodFromCart(index)" class="btn btn-outline-danger btn-sm">-</button>
+                    <h6>{{ food.quantity }}</h6>
+                    <!-- Pulsante per aumentare la quantità del cibo nel carrello -->
+                    <button @click="addOneFoodToCart(index)" class="btn btn-outline-success btn-sm">+</button>
+                  </div>
                 </div>
                 <!-- Prezzo del cibo -->
-                <p class="card-text">€ {{ calculatePrice(food) }}</p>
-                <div class="button-group">
+                <p class="card-text mx-2">€ {{ calculatePrice(food) }}</p>
+                <div class="button-group d-flex justify-content-start">
                   <!-- Pulsante per rimuovere il cibo dal carrello -->
-                  <button @click="removeFoodFromCart(index)" class="btn btn-danger m-2">Cancella cibo</button>
-                  <!-- Pulsante per rimuovere una quantità del cibo dal carrello -->
-                  <button @click="removeOneFoodFromCart(index)" class="btn btn-outline-danger m-2">Rimuovi quantità</button>
+                  <button @click="removeFoodFromCart(index)" class="btn btn-danger">Rimuovi</button>
                 </div>
               </div>
             </div>
@@ -80,6 +84,13 @@ export default {
         // Salva i dati aggiornati nel localStorage
         localStorage.setItem('foods', JSON.stringify(this.cart));
       }, 300);
+    },
+    addOneFoodToCart(index) {
+      const food = this.cart[index];
+      // Aumenta la quantità del cibo nel carrello
+      food.quantity += 1;
+      // Salva i dati aggiornati nel localStorage
+      localStorage.setItem('foods', JSON.stringify(this.cart));
     },
     removeOneFoodFromCart(index) {
       const food = this.cart[index];
@@ -148,8 +159,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.no-shadow{
+.no-shadow {
   box-shadow: none !important;
 }
 
@@ -159,10 +169,11 @@ export default {
   height: 100%;
 }
 
-.card-body{
+.card-body {
   border-radius: 15px;
 }
-.card-body:last-child{
+
+.card-body:last-child {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
@@ -193,11 +204,11 @@ export default {
   flex-wrap: wrap;
 }
 
-.card-text{
-  font-family: 'Fredoka One','sans-serif';
+.card-text {
+  font-family: 'Fredoka One', 'sans-serif';
 }
 
-.card-text:last-child{
+.card-text:last-child {
   font-size: 30px;
 }
 

@@ -2,10 +2,12 @@
   <header @click="toggleMenu" class="header bg-slate-100">
 
 
-    <div  class="nav container">
+    <div class="nav container">
 
-      <div  class="nav__item">
-        <img  class="main-logo" src="../../public/img/Logo Food4You shadow.png" alt="">
+      <div class="nav__item">
+        <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
+          <img class="main-logo" src="../../public/img/Logo Food4You shadow.png" alt="">
+        </router-link>
 
         <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
           <span class="mobile nav-element">
@@ -13,11 +15,11 @@
           </span>
         </router-link>
 
-      </div>     
+      </div>
 
       <ul class="nav__menu mb-0" :class="{ 'nav__menu--open': isMenuOpen }">
         <li>
-        <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
+          <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
 
             <span class="nav-element">
               Home
@@ -25,21 +27,21 @@
           </router-link>
         </li>
         <li>
-        <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'restaurants.index' }">
+          <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'restaurants.index' }">
             <span class="nav-element">
               Ristoranti
             </span>
           </router-link>
         </li>
         <li>
-        <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'register' }">
+          <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'register' }">
             <span class="nav-element">
               Registrati
             </span>
           </router-link>
         </li>
         <li>
-        <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'login' }">
+          <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'login' }">
             <span class="nav-element">
               Login
             </span>
@@ -70,11 +72,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-span{
+span {
   text-shadow: rgb(0, 0, 0) 2px 5px 10px;
 
 }
+
 .main-logo {
   width: 90px;
 }
@@ -89,11 +91,11 @@ header {
   min-height: 120px;
   font-family: 'Modak', sans-serif;
 
-  
+
   .nav-element {
     text-transform: uppercase;
   }
-  
+
 
   .nav__item {
     font-size: 38px;
@@ -136,13 +138,14 @@ header {
 
 
 
-    .mobile{
+    .mobile {
       display: none;
     }
+
     .nav {
-      justify-content: center ;
+      justify-content: center;
     }
- 
+
     .nav__menu {
       display: none;
       flex-direction: column;
@@ -156,29 +159,27 @@ header {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       opacity: 0;
       visibility: hidden;
-      
+
       &.nav__menu--open {
         display: flex;
         opacity: 1;
         visibility: visible;
       }
-      
+
       li {
         margin-bottom: 1rem;
-        
+
       }
 
-      .nav__item{
+      .nav__item {
         align-self: center;
       }
 
     }
-    
+
 
   }
 }
-
-
 </style>
 
 
