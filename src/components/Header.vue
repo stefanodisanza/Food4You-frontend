@@ -6,7 +6,7 @@
 
       <div class="nav__item">
         <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
-          <img class="main-logo" src="../../public/img/Logo Food4You shadow.png" alt="">
+          <img class="main-logo" src="/img/Logo Food4You shadow.png" alt="">
         </router-link>
 
         <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
