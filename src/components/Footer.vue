@@ -69,7 +69,7 @@
           </div>
           <div class="extra-content-item col-6 col-md-3 col-lg-2">
             <div>
-              <img src="../assets/img/nicolaoo 2.png" alt="Immagine 8" class="rounded-circle mx-3 mb-2">
+              <img src="../assets/img/nicola2.png" alt="Immagine 8" class="rounded-circle mx-3 mb-2">
               <a href="https://github.com/nicolaoo" class="link-style">nicolaoo</a>
             </div>
           </div>
@@ -226,4 +226,5 @@ export default {
     flex: 0 0 20%;
     max-width: 20%;
   }
-}</style>
+}
+</style>
