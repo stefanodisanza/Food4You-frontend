@@ -4,85 +4,81 @@
       <div class="row footer links">
         <div class="col-md-3">
           <div class="footer-column">
-          <h3>Scopri Food4You</h3>
-          <ul>
-            <li><a href="#">Investitori</a></li>
-            <li><a href="#">Chi siamo</a></li>
-            <li><a href="#">Ristoranti</a></li>
-            <li><a href="#">Altro</a></li>
-          </ul>
-        </div>
-        </div>
-        <div class="col-md-3">
-          <div class="footer-column">
-          <h3>Pressroom</h3>
-          <ul>
-            <li><a href="#">Programmazione</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Lavora con noi</a></li>
-            <li><a href="#">Diventa nostro partner</a></li>
-          </ul>
-        </div>
+            <h3>Scopri Food4You</h3>
+            <ul>
+              <li><a href="#">Investitori</a></li>
+              <li><a href="#">Chi siamo</a></li>
+              <li><a href="#">Ristoranti</a></li>
+              <li><a href="#">Altro</a></li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-3">
           <div class="footer-column">
-          <h3>Aiuto</h3>
-          <ul>
-            <li><a href="#">Contatti</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Tipi di cucina</a></li>
-          </ul>
-        </div>
+            <h3>Pressroom</h3>
+            <ul>
+              <li><a href="#">Programmazione</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Lavora con noi</a></li>
+              <li><a href="#">Diventa nostro partner</a></li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-3">
           <div class="footer-column">
-          <h3>Note legali</h3>
-          <ul>
-            <li><a href="#">Termini &amp; Condizioni</a></li>
-            <li><a href="#">Informativa sulla privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-          </ul>
+            <h3>Aiuto</h3>
+            <ul>
+              <li><a href="#">Contatti</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Tipi di cucina</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="col-md-3">
+          <div class="footer-column">
+            <h3>Note legali</h3>
+            <ul>
+              <li><a href="#">Termini &amp; Condizioni</a></li>
+              <li><a href="#">Informativa sulla privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      
-
 
       <div class="col-12 col-devs">
-
         <h5 class="footer-text mt-5 mb-4">Realizzato dal Team4</h5>
         <div class="extra-content d-flex flex-wrap justify-content-center">
           <div class="extra-content-item col-6 col-md-3 col-lg-2">
             <div>
-              <img src="/img/TheDusty117.jpeg" alt="Immagine 5" class="rounded-circle mx-3 mb-2">
+              <img src="../assets/img/TheDusty117.jpeg" alt="Immagine 5" class="rounded-circle mx-3 mb-2">
               <a href="https://github.com/TheDusty117" class="link-style">TheDusty117</a>
             </div>
           </div>
           <div class="extra-content-item col-6 col-md-3 col-lg-2">
             <div>
-              <img src="/img/Blaser993.png" alt="Immagine 6" class="rounded-circle mx-3 mb-2">
+              <img src="../assets/img/Blaser993.png" alt="Immagine 6" class="rounded-circle mx-3 mb-2">
               <a href="https://github.com/Blaser993" class="link-style">Blaser993</a>
             </div>
           </div>
           <div class="extra-content-item col-6 col-md-3 col-lg-2">
             <div>
-              <img src="/img/stefanodisanza.png" alt="Immagine 7" class="rounded-circle mx-3 mb-2">
+              <img src="../assets/img/stefanodisanza.png" alt="Immagine 7" class="rounded-circle mx-3 mb-2">
               <a href="https://github.com/stefanodisanza" class="link-style">stefanodisanza</a>
             </div>
           </div>
           <div class="extra-content-item col-6 col-md-3 col-lg-2">
             <div>
-              <img src="/img/nicolaoo 2.png" alt="Immagine 8" class="rounded-circle mx-3 mb-2">
+              <img src="../assets/img/nicolaoo 2.png" alt="Immagine 8" class="rounded-circle mx-3 mb-2">
               <a href="https://github.com/nicolaoo" class="link-style">nicolaoo</a>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </footer>
 </template>
+
 
 <script>
 export default {
@@ -153,11 +149,12 @@ export default {
 
 }
 
-.col-md-3{
-  h3{
-    font-family: 'Fredoka One','sans-serif';
+.col-md-3 {
+  h3 {
+    font-family: 'Fredoka One', 'sans-serif';
   }
-  li{
+
+  li {
     font-family: 'Baloo Bhaijaan 2 Variable', sans-serif;
 
   }
@@ -197,14 +194,16 @@ export default {
   color: black;
 }
 
-.col-devs{
-  h5{
-    font-family: 'Fredoka One','sans-serif';
+.col-devs {
+  h5 {
+    font-family: 'Fredoka One', 'sans-serif';
   }
-  a{
+
+  a {
     font-family: 'Baloo Bhaijaan 2 Variable', sans-serif;
   }
-  img{}
+
+  img {}
 }
 
 /* Stili responsive */
@@ -227,5 +226,4 @@ export default {
     flex: 0 0 20%;
     max-width: 20%;
   }
-}
-</style>
+}</style>
