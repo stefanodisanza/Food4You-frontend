@@ -1,26 +1,19 @@
 <template>
   <header @click="toggleMenu" class="header bg-slate-100">
-
-
     <div class="nav container">
-
       <div class="nav__item">
         <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
-          <img class="main-logo" src="/img/Logo Food4You shadow.png" alt="">
+          <img class="main-logo" src="@/assets/img/Logo Food4You shadow.png" alt="">
         </router-link>
-
         <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
           <span class="mobile nav-element">
             Food4You
           </span>
         </router-link>
-
       </div>
-
       <ul class="nav__menu mb-0" :class="{ 'nav__menu--open': isMenuOpen }">
         <li>
           <router-link style="text-decoration: none; color: inherit;" :to="{ name: 'home' }">
-
             <span class="nav-element">
               Home
             </span>
@@ -48,20 +41,16 @@
           </router-link>
         </li>
       </ul>
-
     </div>
-
   </header>
 </template>
 
 <script>
 export default {
-
   data() {
     return {
       isMenuOpen: false,
     };
-
   },
   methods: {
     toggleMenu() {
@@ -74,7 +63,6 @@ export default {
 <style lang="scss" scoped>
 span {
   text-shadow: rgb(0, 0, 0) 2px 5px 10px;
-
 }
 
 .main-logo {
@@ -84,24 +72,20 @@ span {
 header {
   background-color: #44B925;
   z-index: 999;
-
   top: 0;
   position: sticky;
   padding-top: 16px;
   min-height: 120px;
   font-family: 'Modak', sans-serif;
 
-
   .nav-element {
     text-transform: uppercase;
   }
-
 
   .nav__item {
     font-size: 38px;
     color: white;
     text-shadow: rgb(0, 0, 0) 2px 5px 10px;
-
   }
 
   router-link {
@@ -114,10 +98,7 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
-
 }
-
-
 
 .nav__menu {
   margin-left: auto;
@@ -131,13 +112,8 @@ header {
   }
 }
 
-
 @media screen and (max-width: 1000px) {
   header {
-
-
-
-
     .mobile {
       display: none;
     }
@@ -168,18 +144,11 @@ header {
 
       li {
         margin-bottom: 1rem;
-
       }
 
       .nav__item {
         align-self: center;
       }
-
     }
-
-
   }
-}
-</style>
-
-
+}</style>
